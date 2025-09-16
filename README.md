@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+#  Login-Signup App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimal, and secure Login/Signup React application built with TypeScript and Vite.  
+Live Demo: [harshitaverma.netlify.app](https://harshitaverma.netlify.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Tech Stack
 
-## Expanding the ESLint configuration
+- **React** (v19)
+- **TypeScript**
+- **Vite**
+- **React Router DOM**
+- **CSS**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+##  Installation / Setup Instructions
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/your-username/packet.git
+   cd packet
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Start the development server**
+   ```sh
+   npm run dev
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4. **Open in browser**
+   - Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+##  How to Use
+
+- **Signup:**  
+  Fill in your details (Name, Username, Email, Password, Phone Number) and click **Sign Up**.  
+  - Name must be in UPPERCASE.
+  - Username must start with your name and include a special character.
+  - Password must be at least 8 characters and not the same as your username.
+  - Valid Indian phone number required.
+
+- **Login:**  
+  Use your registered username and password to log in.
+
+- **Switch between Login/Signup:**  
+  Use the links/buttons at the bottom of each form to switch.
+
+---
+
+##  Live Demo
+
+Try it now: [harshitaverma.netlify.app](https://harshitaverma.netlify.app/)
+
+---
+
+##  Usage
+
+- User data is stored in `localStorage` for demo purposes.
+- Form validations are enforced for security and correctness.
+- Responsive and clean UI.
+
+---
