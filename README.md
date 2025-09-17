@@ -13,9 +13,10 @@ Live Demo: [harshitaverma.netlify.app](https://harshitaverma.netlify.app/)
 - **React Router DOM**
 - **CSS**
 
+
 ---
 
-##  Installation / Setup Instructions
+##  Installation / Setup Instruction
 
 1. **Clone the repository**
    ```sh
